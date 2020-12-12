@@ -15,32 +15,32 @@
 	<table>
 
 		<tr>
-			<td>Nama</td>
-			<td> <input type="name" name="Nama" width="350px"> </td>
+			<td><label for="name">Nama</label></td>
+			<td> <input type="name" name="Nama" width="350px" id="name"> </td>
 		</tr>
 
 		<tr>
-		<td>Tanggal Lahir</td>
-		<td> <input type="date" name="Tanggal-lahir"> </td>
+		<td><label for="date">Tanggal Lahir</label></td>
+		<td> <input type="date" name="Tanggal-lahir" id="date"> </td>
 		</tr>
 
 		<tr>
 			<td> <label for="age">Umur</label> </td>
-			<td> <input type="number" name="Umur"> </td>
+			<td> <input type="number" name="Umur" id="age"> </td>
 		</tr>
 
 		<tr>
 			<td> <label for="phone">Kontak</label> </td>
-			<td> <input type="tel" name="Kontak"> </td>
+			<td> <input type="tel" name="Kontak" id="phone"> </td>
 		</tr>
 
 		<tr>
-			<td>Gender</td>
+			<td><label>Gender</label></td>
 			<td> 
-				<label>Pria</label>
-				<input type="radio" name="gender">
-				<label>Wanita</label>
-				<input type="radio" name="gender">
+				<label for="gender">Pria</label>
+				<input type="radio" name="gender" id="gender">
+				<label for="gender2">Wanita</label>
+				<input type="radio" name="gender" id="gender2">
 			</td>
 
 		</tr>
@@ -58,11 +58,11 @@
 
 		<tr>
 			<td>
-				<label>Dalam Negri</label>
-				<input type="checkbox" name="domisili">
+				<label for="Negri1">Dalam Negri</label>
+				<input type="checkbox" name="domisili" id="Negri1">
 		
-				<label>Luar Negri</label>
-				<input type="checkbox" name="domisili">
+				<label for="Negri2">Luar Negri</label>
+				<input type="checkbox" name="domisili" id="Negri2">
 
 			</td>
 		</tr>
@@ -72,9 +72,10 @@
 			<td> 
 
 				<select>
-					<option value="pilihan1">Bekerja</option>
-					<option value="pilihan2">Belajar</option>
-					<option value="pilihan3">Rehat</option>
+					<option disabled="disabled" selected="selected">--Pilih--</option>
+					<option value="pilihan2">Bekerja</option>
+					<option value="pilihan3">Belajar</option>
+					<option value="pilihan4">Rehat</option>
 				</select>
 			</td>
 		</tr>
@@ -86,31 +87,31 @@
 		<table>
 
 		<tr>
-			<td>Username</td>
-			<td><input type="Username" name="Username" value="User_"></td>	
+			<td><label for="user">Username</label></td>
+			<td><input type="Username" name="Username" id="user" value="User_"></td>	
 
 		</tr>
 
 		<tr>
-			<td>Email</td>
-			<td><input type="Email" name="Email" value="@gmail.com"></td>
+			<td><label for="email">Email</label></td>
+			<td><input type="Email" name="Email" id="email" value="@gmail.com"></td>
 
 		</tr>
 
 		<tr>
-			<td>Password</td>
+			<td><label for="password">Password</label></td>
 			<td> <input type="Password" name="Password"></td>
 		</tr></nr>
 
 		<tr>
-			<td>Konfirmasi Password</td>
-			<td><input type="Password" name="Password"></td>
+			<td><label for="konfirm">Konfirmasi Password</label></td>
+			<td><input type="Password" name="Password" id="konfirm"></td>
 		</tr>
 		
 		<tr>
 			<td colspan="2" align="right">
-				<input type="submit" name="Simpan">
-				<input type="reset" name="Reset">
+				<button type="submit">Kirim</button>
+				<button type="reset">Reset</button>
 			</td>
 		</tr>
 
@@ -120,3 +121,4 @@
 	
 </body>
 </html>
+
